@@ -8,14 +8,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <main>
-        <section className="hero">
+      <section className="hero">
+        <div className="hero-overlay">
           <h1>Centro de Gestión de Mercados, Logística y Tecnologías</h1>
-          <p>Bienvenido a nuestra plataforma de formación</p>
-        </section>
-        <Courses />
-        <ContactForm />
-      </main>
+          <p>Formación para el futuro, innovación para el presente</p>
+        </div>
+      </section>
+      <Courses />
+      <ContactForm />
       <Footer />
     </>
   );

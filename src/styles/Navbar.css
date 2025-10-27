@@ -1,10 +1,20 @@
 .navbar {
-  background-color: #0A2F5C;
+  background-color: rgba(10, 47, 92, 0.95);
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 
 .nav-links {
@@ -15,7 +25,7 @@
 
 .nav-links li {
   cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-links li:hover {

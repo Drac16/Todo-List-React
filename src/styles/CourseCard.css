@@ -1,25 +1,40 @@
 .courses {
   text-align: center;
-  padding: 3rem 1rem;
-  background-color: #f5f7fa;
+  padding: 4rem 2rem;
+  background-color: #f7f9fc;
+}
+
+.courses h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0A2F5C;
 }
 
 .course-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
 }
 
 .card {
-  background: #236AB9;
-  color: #fff;
-  padding: 1.5rem;
+  background: white;
+  color: #0A2F5C;
+  padding: 2rem;
   border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 100%;
+  max-width: 280px;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(35, 106, 185, 0.4);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #236AB9;
+  margin-bottom: 0.5rem;
 }
